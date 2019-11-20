@@ -1,0 +1,10 @@
+<h1>your text</h1>
+{{fulltext}}
+<h3>your text contains {{count}} words!!!</h3>
+<a href="{% url 'home'%}">start again</a>
+
+<h2>count of repeated words in your text </h2>
+{% for word, total in worddict %}
+{{word}} : {{total}}
+<br/>
+{%endfor%}
